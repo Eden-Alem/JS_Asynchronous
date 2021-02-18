@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://images.unsplash.com/photo-1555505324-d1ba066a38f4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #E3D2C0;
+    margin-top: 13rem;
+  }
+  
+  .clock {
+    width: 12.5rem;
+    height: 12.5rem;
+    border-radius: 50%;
+    border: black 2px solid;
+    background-color: #E3D2C0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 34rem;
+    margin-bottom: 9rem;
+    box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+      inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px rgba(0, 0, 0, 0.3),
+      inset 0 15px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .clock::before {
+    content: "";
+    width: 0.94rem;
+    height: 0.94rem;
+    position: absolute;
+    background-color: #000;
+    border-radius: 50%;
+    z-index: 1000;
+  }
+  
+  .hour,
+  .min,
+  .sec {
+    position: absolute;
+  }
+
+  .hr {
+    width: 10rem;
+    height: 10rem;
+  }
+  
+  .mn {
+    width: 11.8rem;
+    height: 11.8rem;
+  }
+  
+  .sc {
+    width: 14.4rem;
+    height: 14.4rem;
+  }
+  
+  .hr,
+  .mn,
+  .sc {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hr::before {
+    content: "";
+    width: 0.5rem;
+    height: 5rem;
+    background-color: #000;
+    z-index: 100;
+    border-radius: 5px;
+  }
+
+  .mn::before {
+    content: "";
+    width: 0.4rem;
+    height: 5.6rem;
+    background-color: #000;
+    z-index: 11;
+    border-radius: 5px;
+  }
+
+  .sc::before {
+    content: "";
+    width: 0.2rem;
+    height: 8.75rem;
+    background-color: #000;
+    z-index: 10;
+    border-radius: 5px;
+  }
+  
