@@ -22,13 +22,17 @@
   100% { transform: rotate(360deg); }
 }
 
-body {
+/* body {
   font-family: Arial;
   margin: 0;
-}
+} */
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
 }
 
 img {
@@ -46,10 +50,6 @@ img {
   display: none;
 }
 
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
 
 /* Next & previous buttons */
 .prev,
@@ -81,12 +81,3 @@ img {
 }
 
 
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}

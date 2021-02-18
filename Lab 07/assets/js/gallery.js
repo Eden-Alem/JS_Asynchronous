@@ -18,11 +18,12 @@ function load_fromPlaceHolder() {
             return res.json(); //return the JSON Promise
         })
         .then(function(images) {
-            //iterate over each post [100 posts]
             let output = '';
             images.forEach(function(image) {
                 output += `
-                <img width="100%" height="100%" class="mySlides" src=${image.download_url}>
+                <div class="mySlides">
+                    <img width="100%" src=${image.download_url}>
+                </div>
                 `;
             });
             container.innerHTML += output;
@@ -48,11 +49,12 @@ async function load_fromPlaceHolder_new() {
 
 function loadDataNew() {
     load_fromPlaceHolder_new().then(function(images) {
-            //iterate over each post [100 posts]
             let output = '';
             images.forEach(function(image) {
                 output += `
-                <img width="100%" height="100%" class="mySlides" src=${image.download_url}>
+                <div class="mySlides ">
+                    <img width="100%" src=${image.download_url}>
+                </div>
                 `;
             });
             container.innerHTML += output;
