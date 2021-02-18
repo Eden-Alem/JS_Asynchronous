@@ -22,7 +22,7 @@ function load_fromPlaceHolder() {
             let output = '';
             images.forEach(function(image) {
                 output += `
-                <img width="100%" height="100%" class="slide active" src=${image.download_url}>
+                <img width="100%" height="100%" class="mySlides" src=${image.download_url}>
                 `;
             });
             container.innerHTML += output;
@@ -52,7 +52,7 @@ function loadDataNew() {
             let output = '';
             images.forEach(function(image) {
                 output += `
-                <img width="100%" height="100%" class="slide active" src=${image.download_url}>
+                <img width="100%" height="100%" class="mySlides" src=${image.download_url}>
                 `;
             });
             container.innerHTML += output;

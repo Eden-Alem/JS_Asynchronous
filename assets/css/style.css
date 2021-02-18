@@ -1,14 +1,14 @@
-.load {
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid #000;
-    width: 120px;
-    height: 120px;
-    -webkit-animation: spin 2s linear infinite; 
-    animation: spin 2s linear infinite;
-    display: flex;
-    align-content: center;
-    justify-content: center;
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #000;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; 
+  animation: spin 2s linear infinite;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 /* Safari */
@@ -22,33 +22,50 @@
   100% { transform: rotate(360deg); }
 }
 
-  * {box-sizing: border-box}
-/* body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;} */
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+body {
+  font-family: Arial;
+  margin: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+  height: 30rem;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container, .slideshow-container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 40%;
   width: auto;
   padding: 16px;
-  margin-top: -22px;
+  margin-top: -50px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
+  font-size: 20px;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  -webkit-user-select: none;
 }
 
 /* Position the "next button" to the right */
@@ -58,36 +75,18 @@ img {vertical-align: middle;} */
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 
-
-
-.active {
-  background-color: #717171;
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+.active,
+.demo:hover {
+  opacity: 1;
 }
