@@ -1,0 +1,27 @@
+[
+
+    {
+        "name": "John 1",
+        "image": "https://images.unsplash.com/photo-1604449746972-6af8ccbbf351?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTd8fGRpYW1vbmRzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60",
+        "postTitle": "Post One",
+        "date": "January 21 ,2021",
+        "postText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galle"
+    },
+    {
+        "name": "John 2",
+        "image": "https://images.unsplash.com/photo-1600003014608-c2ccc1570a65?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nzh8fGRpYW1vbmRzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60",
+        "postTitle": "Post Two",
+        "date": "January 21 ,2021",
+        "postText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galle"
+    }, {
+        "name": "John 3",
+        "image": "https://images.unsplash.com/photo-1526723041686-bdb3ba7bc3d2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTA5fHxkaWFtb25kc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60",
+        "postTitle": "Post Three",
+        "date": "January 21 ,2021",
+        "postText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galle"
+    }
+
+
+
+
+]
