@@ -1,4 +1,4 @@
-.loader {
+.load {
     border: 16px solid #f3f3f3;
     border-radius: 50%;
     border-top: 16px solid #000;
@@ -9,18 +9,18 @@
     display: flex;
     align-content: center;
     justify-content: center;
-  }
-  
-  /* Safari */
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
   * {box-sizing: border-box}
 /* body {font-family: Verdana, sans-serif; margin:0}
